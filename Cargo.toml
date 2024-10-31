@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name = "rpico-embassy2"
+name = "rp2040-playground"
 version = "0.1.0"
 authors = ["Maksim Vykhota <m.vykhota@protonmail.com>"]
 resolver = "2"
@@ -24,9 +24,10 @@ embassy-time = { version = "0.3.0", features = ["defmt", "defmt-timestamp-uptime
 
 cortex-m = { version = "0.7.6" }
 embassy-rp = { version = "0.2.0", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl"] }
+pcd8544 = "0.2.0"
 
 [[bin]]
-name = "rpico-embassy2"
+name = "rp2040-playground"
 test = false
 doctest = false
 bench = false
